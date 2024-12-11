@@ -1,0 +1,37 @@
+{
+  "name": "slozhno-sosredotochitsya",
+  "version": "1.0.0",
+  "description": "учебный проект на платформе Яндекс Практикум",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^3.4.2",
+    "stylelint": "^16.11.0",
+    "supports-color": "^7.2.0",
+    "supports-hyperlinks": "^3.1.0",
+    "svg-tags": "^1.0.0",
+    "table": "^6.9.0",
+    "to-regex-range": "^5.0.1",
+    "util-deprecate": "^1.0.2",
+    "which": "^1.3.1",
+    "write-file-atomic": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo 'Hi!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKolbe/slozhno-sosredotochitsya.git"
+  },
+  "author": "Alexandr Kolesnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexKolbe/slozhno-sosredotochitsya/issues"
+  },
+  "homepage": "https://github.com/AlexKolbe/slozhno-sosredotochitsya#readme"
+}
