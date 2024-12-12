@@ -2,4 +2,163 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  
+  padding: 20px;
+  font-family: var(--main-font-family, sans-serif);
+  font-size: var(--main-font-size, 18px);
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
 }
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  height: 100vh;
+  margin-block-end: 40px;
+  min-block-size: 668px;
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-content: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  inline-size: 70px;
+  block-size: 23px;
+  padding: 1.5px 13px;
+  color: var(--menu-item-color);
+  line-height: 18px;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-color-transparent);
+  outline-offset: -1px;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px var(--menu-item-color) solid;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--menu-item-color);
+  outline-offset: -1px;
+  pointer-events: none;
+}
+
+.header__title {
+  position: relative;
+  font-size: var(--header-title-size-desktop);
+  font-weight: 700;
+  line-height: 82.5%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header .page-title {
+  position: relative;
+  left: -20px;
+}
+
+.header__quote {
+  justify-self: end;
+  align-items: center;
+  width: 50%;
+}
+
+.title-decor {
+  background: var(--accent-color);
+  color: var(--subtitle-color);
+  font-weight: 700;
+}
+
+.decor-element {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 1px;
+  right: 9px;
+  color: var(--accent-color);
+}
+
+.decor-element::after {
+  content: "";
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  margin-inline-start: 10px;
+  background: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  border-radius: 50%;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  right: 0;
+  top: 0;
+  border: solid var(--accent-color);
+  border-width: 1px 1px 0 0;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  left: 0;
+  bottom: 0;
+  border: solid var(--accent-color);
+  border-width: 0 0 1px 1px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid var(--decor-element-color);
+  border-width: 1px 1px 0 0;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  border: solid var(--decor-element-color);
+  border-width: 0 0 1px 1px;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+
+
+
+.footer {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  min-block-size: 668px;
+}
+
+.footer .page-title {
+  padding-block-end: 38px;
+}
+
+
+
+
