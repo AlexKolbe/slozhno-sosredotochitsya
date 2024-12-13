@@ -58,6 +58,8 @@
   pointer-events: none;
 }
 
+/* FOCUS */
+
 .page-title {
   position: relative;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -184,7 +186,7 @@
   /* margin-block-end: 81px; */
 
   .main-article {
-    grid-column: 1;
+    /* grid-column: 1; */
   }
 }
 
@@ -194,6 +196,11 @@
   font-size: inherit;
 }
 
+.main-article:not(:last-child) {
+  margin-block-end: 20px;
+
+}
+
 .main-article__subtitle {
   margin-block-end: 9px;
   font-weight: 400;
@@ -201,7 +208,7 @@
 
 .main-article__text {
   line-height: 130%;
-  margin-block-end: 20px;
+
 }
 
 .main-article__link {
