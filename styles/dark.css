@@ -5,12 +5,12 @@
 */
 
 :root .theme_dark {
-  --accent-color: rgb(255, 0, 112);
+  --accent-color: rgb(255 0 112);
   --menu-item-color: var(--accent-color);
-  --accent-color-transparent: rgba(255, 0, 112, 0.4);
-  --main-text-color: rgb(241, 178, 206);
-  --subtitle-color: rgb(0, 0, 40);
-  --title-color: rgb(219, 0, 255);
+  --accent-color-transparent: rgb(255 0 112 / 0.4);
+  --main-text-color: rgb(241 178 206);
+  --subtitle-color: rgb(0 0 40);
+  --title-color: rgb(219 0 255);
   --section-title-color: var(--accent-color);
   --link-action-color: var(--accent-color);
   --decor-element-color: var(--accent-color);
@@ -27,26 +27,25 @@
   .decor-element {
     display: flex;
   }
-
 }
 
-
 @media (prefers-color-scheme: dark) {
-  
+
   :root {
-    --accent-color: rgb(255, 0, 112);
+    --accent-color: rgb(255 0 112);
     --menu-item-color: var(--accent-color);
-    --accent-color-transparent: rgba(255, 0, 112, 0.4);
-    --main-text-color: rgb(241, 178, 206);
-    --subtitle-color: rgb(0, 0, 40);
-    --title-color: rgb(219, 0, 255);
+    --accent-color-transparent: rgb(255 0 112 / 0.4);
+    --main-text-color: rgb(241 178 206);
+    --subtitle-color: rgb(0 0 40);
+    --title-color: rgb(219 0 255);
     --section-title-color: var(--accent-color);
     --link-action-color: var(--accent-color);
     --decor-element-color: var(--accent-color);
   }
 
   .page {
-    background: url(../images/cover-image-dark.png) no-repeat center / cover fixed;
+    background: url(../images/cover-image-dark.png) no-repeat center / cover
+      fixed;
   }
 
   .decor-element {
