@@ -5,15 +5,15 @@
 */
 
 :root .theme_dark {
-  --accent-color: rgb(255 0 112);
-  --menu-item-color: var(--accent-color);
-  --accent-color-transparent: rgb(255 0 112 / 0.4);
-  --main-text-color: rgb(241 178 206);
+  --accent-color: 255 0 112;
+  --menu-item-color: rgb(var(--accent-color));
+  --menu-item-hover: rgb(var(--accent-color) / 0.4);
+  --main-text-color: 241, 178, 206;
   --subtitle-color: rgb(0 0 40);
   --title-color: rgb(219 0 255);
-  --section-title-color: var(--accent-color);
-  --link-action-color: var(--accent-color);
-  --decor-element-color: var(--accent-color);
+  --section-title-color: rgb(var(--accent-color));
+  --link-action-color: rgb(var(--accent-color));
+  --decor-element-color: rgb(var(--accent-color));
 }
 
 .page.theme_dark {
@@ -32,15 +32,15 @@
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --accent-color: rgb(255 0 112);
-    --menu-item-color: var(--accent-color);
-    --accent-color-transparent: rgb(255 0 112 / 0.4);
-    --main-text-color: rgb(241 178 206);
+    --accent-color: 255 0 112;
+    --menu-item-color: rgb(var(--accent-color));
+    --menu-item-hover: rgb(var(--accent-color) / 0.4);
+    --main-text-color: 241, 178, 206;
     --subtitle-color: rgb(0 0 40);
     --title-color: rgb(219 0 255);
-    --section-title-color: var(--accent-color);
-    --link-action-color: var(--accent-color);
-    --decor-element-color: var(--accent-color);
+    --section-title-color: rgb(var(--accent-color));
+    --link-action-color: rgb(var(--accent-color));
+    --decor-element-color: rgb(var(--accent-color));
   }
 
   .page {

@@ -4,10 +4,11 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
   padding: 20px;
-  font-family: var(--main-font-family, sans-serif);
-  font-size: var(--main-font-size, 18px);
-  line-height: var(--main-line-height);
-  color: var(--main-text-color);
+  font-family: "IBM Plex mono", monospace;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgb(var(--main-text-color));
+  background-attachment: fixed;
 }
 
 /* HEADER */
@@ -15,11 +16,13 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr auto 1fr;
+  grid-template-rows: 40% min-content 40%;
   height: 100vh;
   margin-block-end: 40px;
   min-block-size: 668px;
 }
+
+/* HEADER MENU */
 
 .header__theme-menu {
   display: grid;
@@ -34,7 +37,7 @@
 .header__theme-menu-button {
   inline-size: 70px;
   block-size: 23px;
-  padding: 1.5px 13px;
+  padding: 2px 13px 5px;
   color: var(--menu-item-color);
   line-height: 18px;
   border: 1px solid transparent;
@@ -55,13 +58,13 @@
   pointer-events: none;
 }
 
-.header__title {
+.page-title {
   position: relative;
-  font-size: var(--header-title-size-desktop);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 rgb(var(--accent-color));
 }
 
 .header .page-title {
@@ -75,10 +78,10 @@
   width: 50%;
 }
 
-/* DECORATION */
+/* DECORATION #1 */
 
 .title-decor {
-  background: var(--accent-color);
+  background: var(--decor-element-color);
   color: var(--subtitle-color);
   font-weight: 700;
 }
@@ -151,22 +154,23 @@
 
 .content-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px 20px;
+  grid-template-columns: 33% auto;
   margin-block-end: 80px;
-}
-
-.dificulties {
-
-  .main-article {
-    grid-column: 2 / 4;
-  }
+  gap: 20px;
 }
 
 .content-section__title {
   color: var(--section-title-color);
   font-size: var(--main-font-size);
 }
+
+.dificulties {
+  
+  .main-article {
+    grid-column: 1;
+  }
+}
+
 
 .reasons {
 
@@ -177,26 +181,27 @@
 }
 
 .recomendations {
-  margin-block-end: 81px;
+  /* margin-block-end: 81px; */
 
   .main-article {
-    grid-column: 2 / 4;
+    grid-column: 1;
   }
 }
 
 .main-article__title {
   margin-block-end: 10px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: inherit;
 }
 
 .main-article__subtitle {
   margin-block-end: 9px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .main-article__text {
   line-height: 130%;
+  margin-block-end: 20px;
 }
 
 .main-article__link {
@@ -212,7 +217,7 @@
 }
 
 .additional-title {
-  margin-block-end: 21px;
+  margin-block-end: 20px;
 }
 
 .gallery {
@@ -263,6 +268,8 @@
 .footer .page-title {
   padding-block-end: 38px;
 }
+
+
 
 /* < 1024 TABLET */
 
